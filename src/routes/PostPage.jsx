@@ -1,20 +1,18 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { addUserSavedImage, addTodo } from '../redux/user/action';
+import { addTodo } from '../redux/user/action';
 import more_icon from '../img/more_icon.png';
 import upload_icon from '../img/upload_icon.png';
 import right_up from '../img/right-up.png';
 import copy from '../img/copy.png';
 import scan from '../img/scan.png';
 import down_arrow from '../img/down-arrow.png';
-import icon_owner from '../img/icon_owner.jpg';
 import '../components/ImageCard/ImageCard.css';
 import '../css/PostPage.css';
 import { Navbar } from '../components/Navbar/Navbar';
 import { UserHomePage } from '../components/HomepageComponents/UserHomePage';
 import { useSelector, useDispatch } from 'react-redux';
-import constant from '../constant';
 import { saveAs } from 'file-saver';
 const PostPage = () => {
 	const { prodId } = useParams();
@@ -240,7 +238,7 @@ const PostPage = () => {
 							<div className='chat_main'>
 								{list_state.map((ele) => {
 									return (
-										<div className='chatsub_div'>
+										<div className='chatsub_div' key={ele.id}>
 											<img
 												src={loggedUserData.userProfilePic}
 												alt=''

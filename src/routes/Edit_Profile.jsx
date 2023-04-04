@@ -47,7 +47,7 @@ export const Edit_Profile = () => {
 			body: formData,
 		})
 			.then((res) => res.json())
-			.then((data) => {
+			.then(() => {
 				setUpload('Uploaded');
 				alert('Uploaded');
 			});

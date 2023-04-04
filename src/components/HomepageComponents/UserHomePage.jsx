@@ -4,7 +4,7 @@ import ImageCard from '../ImageCard/ImageCard';
 const randomWords = require('random-words');
 
 export const UserHomePage = () => {
-	const [list, setList] = React.useState([]);
+	
 	const [list1, setList1] = React.useState([]);
 	const [list2, setList2] = React.useState([]);
 	const [list3, setList3] = React.useState([]);
@@ -36,27 +36,27 @@ export const UserHomePage = () => {
 		<div className='home_page_container'>
 			<div>
 				{list1.map((ele) => {
-					return <ImageCard image={ele.urls.small} id={ele.id} />;
+					return <ImageCard image={ele.urls.small} id={ele.id} key={ ele.id} />;
 				})}
 			</div>
 			<div>
 				{list2.map((ele) => {
-					return <ImageCard image={ele.urls.small} id={ele.id} />;
+					return <ImageCard image={ele.urls.small} id={ele.id} key={ ele.id}/>;
 				})}
 			</div>
 			<div>
 				{list3.map((ele) => {
-					return <ImageCard image={ele.urls.small} id={ele.id} />;
+					return <ImageCard image={ele.urls.small} id={ele.id} key={ ele.id}/>;
 				})}
 			</div>
 			<div>
 				{list4.map((ele) => {
-					return <ImageCard image={ele.urls.small} id={ele.id} />;
+					return <ImageCard image={ele.urls.small} id={ele.id} key={ ele.id}/>;
 				})}
 			</div>
 			<div>
 				{list1.map((ele) => {
-					return <ImageCard image={ele.urls.small} id={ele.id} />;
+					return <ImageCard image={ele.urls.small} id={ele.id} key={ ele.id}/>;
 				})}
 			</div>
 		</div>

@@ -1,17 +1,15 @@
-module.exports = {
-	env: {
-		browser: true,
-		es2021: true,
-	},
-	extends: ['plugin:react/recommended', 'eslint:recommended'],
-	overrides: [],
-	parserOptions: {
-		ecmaVersion: 'latest',
-		sourceType: 'module',
-	},
-	plugins: ['react'],
-	rules: {
-		semi: ['error', 'always'],
-		quotes: ['error', 'single'],
-	},
+export const env = {
+	browser: true,
+	es2021: true,
+};
+export const extend = ['plugin:react/recommended', 'eslint:recommended'];
+export const overrides = [];
+export const parserOptions = {
+	ecmaVersion: 'latest',
+	sourceType: 'module',
+};
+export const plugins = ['react'];
+export const rules = {
+	semi: ['error', 'always'],
+	quotes: ['error', 'single'],
 };

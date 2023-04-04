@@ -10,20 +10,17 @@ import {
 	Following,
 	Button_wrapper,
 	Saved_button,
-	Image_card,
 	Middle_div,
 	Svg,
-	SavedImg,
 } from '../components/UserProfile/UserProfile';
-import { useSelector } from 'react-redux';
 import { Navbar } from '../components/Navbar/Navbar';
 import ImageCardDelete from '../components/ImageCard/ImageCardDelete';
 import '../css/user_profilepage.css';
 import { Disclaimer } from '../components/Disclaimer';
 import { useNavigate } from 'react-router-dom';
-import constant from '../constant';
 export const User_ProfilePage = () => {
 	let userData = JSON.parse(localStorage.getItem('userData'));
+	// eslint-disable-next-line no-self-assign
 	userData = userData;
 	const avatar = `${userData.avatar}`;
 	const [userSavedImage, setUserSavedImage] = React.useState([]);
@@ -104,7 +101,7 @@ export const User_ProfilePage = () => {
 						{userSavedImage.map((ele) => {
 							return (
 								//image.img_url
-								<ImageCardDelete image={ele.image_url} id={ele.image_id} />
+								<ImageCardDelete image={ele.image_url} id={ele.image_id} key={ele.image_id } />
 							);
 						})}
 					</div>
