@@ -1,12 +1,11 @@
 // User Homepage After Login
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { isLogIn } from '../redux/global_data/action';
-import { addUserData, prevSavedImage } from '../redux/user/action';
+import { addUserData } from '../redux/user/action';
 import { Navbar } from '../components/Navbar/Navbar';
 import { UserHomePage } from '../components/HomepageComponents/UserHomePage';
 import { Disclaimer } from '../components/Disclaimer';
-import constant from '../constant';
 export const User_HomePage = () => {
 	const dispatch = useDispatch();
 	const userData = useDispatch();

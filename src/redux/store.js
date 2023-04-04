@@ -1,7 +1,7 @@
-import { createStore, combineReducers } from "redux";
-import { userReducer } from "./user/reducer";
-import todoreducer from "./user/todoreducer";
-import { globalReducer } from "./global_data/reducer";
+import { createStore, combineReducers } from 'redux';
+import { userReducer } from './user/reducer';
+import todoreducer from './user/todoreducer';
+import { globalReducer } from './global_data/reducer';
 const rootReducer = combineReducers({
 	user: userReducer,
 	global: globalReducer,

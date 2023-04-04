@@ -2,11 +2,10 @@ import React from 'react';
 import './ImageCard.css';
 import more_icon from '../../img/more_icon.png';
 import upload_icon from '../../img/upload_icon.png';
-import whatsapp_icon from '../../img/whatsapp_icon.png';
 import facebook_icon from '../../img/facebook_icon.png';
 import search_icon from '../../img/search_icon.png';
 import { useState } from 'react';
-import { Link, BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const ImageCard = (props) => {
 	const [share, setShare] = useState(false);
 	const [modal, setModal] = useState(false);

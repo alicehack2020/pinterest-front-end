@@ -14,7 +14,6 @@ import {
 	Business,
 	SignUpText,
 } from './components/LoginWrapper';
-import constant from '../../constant';
 import FacebookLogin from 'react-facebook-login';
 
 export const Login = () => {
@@ -268,7 +267,7 @@ export const Login = () => {
 									value='Continue'
 								></Input>
 							</Form>
-							<Text style={{ margin: `20px 0` }}>OR</Text>
+							<Text style={{ margin: '20px 0' }}>OR</Text>
 
 							<FacebookLogin
 								appId={process.env.REACT_APP_FACEBOOK_APP_ID}
@@ -295,23 +294,23 @@ export const Login = () => {
 								onFailure={handleGoogleLogin}
 								cookiePolicy={'single_host_origin'}
 							/>
-							<Text bottomNormal style={{ margin: `10px 0` }}>
+							<Text bottomNormal style={{ margin: '10px 0' }}>
 								By continuing, you agree to Pinterest's
 							</Text>
-							<Text bottomNormal style={{ margin: `10px 0` }}>
+							<Text bottomNormal style={{ margin: '10px 0' }}>
 								Terms of Service and acknowledge you've read our
 							</Text>
-							<Text bottomBold style={{ margin: `10px 0` }}>
+							<Text bottomBold style={{ margin: '10px 0' }}>
 								Privacy Policy
 							</Text>
-							<Text bottomBold style={{ margin: `10px 0` }}>
+							<Text bottomBold style={{ margin: '10px 0' }}>
 								Already a member?{' '}
 								<button
 									style={{
-										cursor: `pointer`,
-										border: `none`,
-										background: `none`,
-										fontSize: `1rem`,
+										cursor: 'pointer',
+										border: 'none',
+										background: 'none',
+										fontSize: '1rem',
 									}}
 									onClick={() => {
 										setToggleForm(false);
@@ -320,7 +319,7 @@ export const Login = () => {
 									Login
 								</button>
 							</Text>
-							<Text bottomBold style={{ margin: `10px 0` }}>
+							<Text bottomBold style={{ margin: '10px 0' }}>
 								Are you a business? Get started here!
 							</Text>
 							<Business>Create a free business account</Business>
@@ -365,7 +364,7 @@ export const Login = () => {
 									value='Login'
 								></Input>
 							</Form>
-							<Text style={{ margin: `20px 0` }}>OR</Text>
+							<Text style={{ margin: '20px 0' }}>OR</Text>
 							<FacebookLogin
 								appId={process.env.REACT_APP_FACEBOOK_APP_ID}
 								autoLoad={false}
@@ -391,23 +390,23 @@ export const Login = () => {
 								onFailure={handleGoogleLogin}
 								cookiePolicy={'single_host_origin'}
 							/>
-							<Text bottomNormal style={{ margin: `10px 0` }}>
+							<Text bottomNormal style={{ margin: '10px 0' }}>
 								By continuing, you agree to Pinterest's
 							</Text>
-							<Text bottomNormal style={{ margin: `10px 0` }}>
+							<Text bottomNormal style={{ margin: '10px 0' }}>
 								Terms of Service and acknowledge you've read our
 							</Text>
-							<Text bottomBold style={{ margin: `10px 0` }}>
+							<Text bottomBold style={{ margin: '10px 0' }}>
 								Privacy Policy
 							</Text>
-							<Text bottomBold style={{ margin: `10px 0` }}>
+							<Text bottomBold style={{ margin: '10px 0' }}>
 								Join Us...{'   '}
 								<button
 									style={{
-										cursor: `pointer`,
-										border: `none`,
-										background: `none`,
-										fontSize: `1rem`,
+										cursor: 'pointer',
+										border: 'none',
+										background: 'none',
+										fontSize: '1rem',
 									}}
 									onClick={() => setToggleForm(true)}
 								>
@@ -417,7 +416,7 @@ export const Login = () => {
 									Sign up
 								</button>
 							</Text>
-							<Text bottomBold style={{ margin: `10px 0` }}>
+							<Text bottomBold style={{ margin: '10px 0' }}>
 								Are you a business? Get started here!
 							</Text>
 							<Business>Create a free business account</Business>

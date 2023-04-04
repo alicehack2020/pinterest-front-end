@@ -8,17 +8,10 @@ import twitter from '../../img/twitter.png';
 import search_icon from '../../img/search_icon.png';
 import gmail from '../../img/gmail.png';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { prevSavedImage } from '../../redux/user/action';
 import { saveAs } from 'file-saver';
-import constant from '../../constant';
-import { useNavigate } from 'react-router-dom';
 const ImageCardDelete = (props) => {
 	const [share, setShare] = useState(false);
 	const [modal, setModal] = useState(false);
-	const navigate = useNavigate();
-	const dispatch = useDispatch();
 	const toggleShare = () => {
 		setShare(!share);
 	};
